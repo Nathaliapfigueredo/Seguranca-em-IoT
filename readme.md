@@ -11,7 +11,7 @@ A análise foca na identificação de vulnerabilidades inerentes ao código, con
 ### 2.1 Autenticação
 Dessa forma, qualquer atacante na mesma rede (ou com rota até o dispositivo) pode ligar/desligar GPIOs enviando requisições HTTP GET simples.
 
-### 2.2 Man-in-the-Middle (MITM)
+### 2.2 Tráfego não Criptografado
 O tráfego HTTP entre o cliente (navegador) e o ESP32 é não criptografado. Um atacante presente na mesma rede Wi-Fi, ou com acesso ao roteador, pode interceptar, ler e alterar as requisições enviadas ao servidor. Como o servidor aceita qualquer comando baseado apenas no caminho da URL, o invasor pode injetar comandos maliciosos, por exemplo alterando um pacote legítimo do usuário.
 
 

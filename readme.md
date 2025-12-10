@@ -93,3 +93,6 @@ Foi elaborada uma tabela consolidada dos ataques e ordenados os ataques desta ta
 https://drive.google.com/file/d/1OW4Em_-CA1642B4_aOaKBbBbo6LdLpka/view?usp=sharing 
 
 Acessando IP de diferentes computadores, mostrando a falta de segurança: https://drive.google.com/file/d/1AEfa8cmIlqFp4XENeSZIpoR7lw8ESLNR/view 
+O vídeo apresenta o acesso indevido a um dispositivo devido à ausência de mecanismos de segurança no servidor implementado no ESP32. Esse comportamento demonstra exatamente o tipo de vulnerabilidades analisadas neste relatório.
+Para evidenciar essa vulnerabilidade, utilizou-se um segundo computador, separado do ambiente de desenvolvimento original, com o objetivo de simular um atacante externo.
+Durante a demonstração, esse computador adicional consegue acessar diretamente as rotas expostas pelo servidor do ESP32 sem qualquer autenticação, criptografia ou controle de permissões. Isso evidencia que o dispositivo responde a requisições não autorizadas e não valida a origem das conexões, permitindo a visualização e manipulação dos dados do sistema.
